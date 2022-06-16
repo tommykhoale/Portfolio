@@ -1,0 +1,266 @@
+@media (max-width: 560px){
+    body {
+        font-size: 0.9rem;
+    }
+}
+*{
+    margin: 0;
+}
+body{
+    font-family: josefin, sans-serif;
+    font-size: 16px;    
+    color: aliceblue;
+    background-color: #202020;
+}
+.title{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('images/oliver-pecker-HONJP8DyiSM-unsplash.jpg');
+    position: relative;
+}
+.title nav{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+}
+
+
+.title>*{
+    padding: 1%;
+    z-index: 2;
+}
+.title h2{
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+}
+.my-skills .fa-brands{
+    color: aliceblue;
+    width: 1000px;
+}
+.title a,
+.about-me a{
+    border: solid #3e9beb 3px;
+    border-radius: 5%;
+    padding: 1% 2.5%;
+    text-decoration: none;
+    color: #3e9beb;
+}
+.title .button:hover,
+.about-me a:hover{
+    border: solid #3e9beb 3px;
+    border-radius: 5%;
+    padding: 1% 2.5%;
+    text-decoration: none;
+    background-color: #3e9beb;
+    color: aliceblue;
+    transition: 500ms;
+}
+.title .nav a{
+    border: none;
+    color: aliceblue;
+}
+.title .nav a:hover{
+    border: none;
+    color: #3e9beb;
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.about-me{
+    display: none;
+    height: 60vh;
+    padding: 5%;
+    margin: auto;
+    display: flex;
+}
+.about-me-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    margin: auto;
+}
+.about-me-card img{
+    height: 30vh;
+    border-radius: 100px 100px;
+    border: #3e9beb 4px solid;
+    margin-right: 3%;
+}
+
+.about-me h3 {
+    font-size: 2rem;
+}
+.about-me > p{
+    max-width: 700px;
+    text-align: center;
+    font-size: 1.25em;
+    margin: 1%;
+}
+
+.about-me-text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+}
+.about-me-text a{
+    width: 20%;
+    text-align: center;
+}
+
+.about-me-paragraph span{
+ color: #3e9beb;
+ font-weight: bolder;
+}
+
+.skills-logo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 80vh;
+    background-color: #3e9beb;
+    padding-top: 5%;
+}
+.skills-logo h3{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.skills-logo .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 7%;
+}
+.logo i{
+    padding-bottom: 1rem;
+}
+.skills-logo .logo:hover{
+    transition: 150ms;
+    transform: scale(1.4);
+}
+.my-projects{
+    padding: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+}
+.my-projects h1{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 4%;
+}
+.project-one{
+    background-image: url(/images/Screenshot\ 2022-06-16\ 012301.png);
+}
+.project-two{
+    background-image: url(/images/screenshot\ pokemon\ api.png);
+}
+.image{
+    padding: 2%;
+    max-width: 450px;
+    height: 280px;
+    transition: 0.5s;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.image section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.8s;
+}
+.image a{
+    padding: 1% 2%;
+    border: #3e9beb 2px solid;
+    border-radius: 10px 10px;
+    width: 70px;
+    text-align: center;
+    margin: 1%;
+}
+.image a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 300ms;
+}
+.image .languages{
+    text-shadow: #3e9beb  1px 1px;
+}
+.image section>*{
+    padding: 1%;
+    text-align: center;
+}
+
+.image section:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+.image:hover{
+    box-shadow: 0 0 0 160px rgba(0, 0, 0, 0.9) inset;
+}
+.contact-me{
+    height: 20vh;
+    width: 80%;
+    padding: 0 10%;
+    font-size: 1.5rem;
+}
+.contact-me h4{
+    padding-bottom: 1%;
+}
+.contact-me .contact-icons{
+    display: flex;
+    justify-content: flex-start;   
+}
+.contact-me a{
+    padding-right: 1%;
+    color: aliceblue;
+}
+.contact-me a:hover{
+    cursor: pointer;
+    color: lightblue;
+    transition: 100ms;
+}
+
+
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
