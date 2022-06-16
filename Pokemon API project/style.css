@@ -1,0 +1,110 @@
+body{
+    background-color: blue;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(255, 38, 0);
+    margin: 0;
+}
+
+nav a{
+    padding: 2%;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+nav a:hover{
+    transform: scale(1.1);
+    color: bisque;
+    transition: .1s;
+}
+.cover-page{
+    background-image: url(/imgs/forest.jpg);
+    height: 87vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.cover-page .brock-image{
+    align-self: flex-end;
+}
+.brock-image img{
+    width: 50vh;
+    margin-bottom: -1.5%;
+}
+.cover-page .cover-text{
+    background-color: aliceblue;
+    color: black;
+    padding: 5%;
+    align-self: center;
+    border-radius: 50%;
+    flex-grow: 0.2;
+    text-align: center;
+}
+.choose-pokemon-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 3%;
+}
+.pokemon-card{
+    background-color: aqua;
+    width: 60%;
+    max-width: 300px;
+    margin: auto;
+    max-height: 50vh;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: yellow solid 8px;
+    color: darkblue;
+    text-transform: capitalize;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.pokemon-card img{
+    width: 25%;
+    padding: 3%;
+    border: orange 5px solid;
+    border-radius: 50%;
+    align-self: center;
+}
+.header{
+    align-self: center;
+    font-size: 4.5rem;
+}
+button{
+    width: 40%;
+    max-width: 400px;
+    align-self: center;
+    padding: 2%;
+    background-color: transparent;
+    color: yellow;
+    background-color: red;
+    border: yellow 5px solid;
+    font-size: larger;
+    margin-top: 2%;
+}
+button:hover{
+    background-color: aqua;
+    color: darkblue;
+    transform: scale(1.1);
+    transition: 200ms;
+    
+}
+#congrats-text{
+    align-self: center;
+    font-size: 1rem;
+}
+span{
+    text-transform: capitalize;
+}
